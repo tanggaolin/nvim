@@ -140,6 +140,15 @@ packer.startup({
     -- use("Pocco81/DAPInstall.nvim")
     -- use("jbyuki/one-small-step-for-vimkind")
 
+    use({
+      "iamcco/markdown-preview.nvim",
+      run = "cd app && npm install",
+      setup = function()
+        vim.g.mkdp_filetypes = { "markdown" }
+      end,
+      ft = { "markdown" },
+    })
+
     if paccker_bootstrap then
       packer.sync()
     end

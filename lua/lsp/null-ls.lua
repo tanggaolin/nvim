@@ -37,6 +37,7 @@ null_ls.setup({
     -- rustfmt
     -- rustup component add rustfmt
     formatting.rustfmt,
+    formatting.gofmt,
     -- Python
     -- pip install black
     -- asdf reshim python

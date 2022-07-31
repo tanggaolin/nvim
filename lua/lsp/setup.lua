@@ -14,6 +14,8 @@ local servers = {
   jsonls = require("lsp.config.json"),
   tsserver = require("lsp.config.ts"),
   rust_analyzer = require("lsp.config.rust"),
+  gopls = require("lsp.config.gopls"),
+  golangci_lint_ls = require("lsp.config.golangci_lint_ls"),
   -- remark_ls = require("lsp.lang.markdown"),
 }
 
